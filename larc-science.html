@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Science - LARC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-indigo" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="larc.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Science</a>
+    <a href="larc-people.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">People</a>
+    <a href="larc-publications.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
+    <a href="larc-gallery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Gallery</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="larc.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="larc-people.html" class="w3-bar-item w3-button w3-padding-large">People</a>
+    <a href="larc-publications.html" class="w3-bar-item w3-button w3-padding-large">Publications</a>
+    <a href="larc-gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:128px 16px; background-image: url('larc-images/asterix-z1.avif'); background-size: cover;">
+  <h1 class="w3-margin w3-jumbo" style="color: white;">Science</h1>
+  <p class="w3-xlarge" style="color: white;">Our Research Priorities</p>
+</header>
+
+<!-- Science Overview -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center">Research Focus</h1>
+    <p class="w3-center w3-large w3-padding-16">Decoding the fundamental nature of matter in the universe using theory, observation, simulation, and AI.</p>
+  </div>
+</div>
+
+<!-- Three Pillars -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center">Our Three Pillars</h1>
+
+    <!-- Dark Matter & Neutrinos -->
+    <div class="w3-card w3-white w3-padding-32 w3-margin-top">
+      <div class="w3-row">
+        <div class="w3-col m2 w3-center">
+          <i class="fa fa-globe w3-text-indigo" style="font-size: 80px;"></i>
+        </div>
+        <div class="w3-col m10">
+          <h2>Dark Matter & Neutrinos</h2>
+          <p class="w3-text-grey" style="font-size: 16px;">
+            Understanding and characterizing dark matter and neutrinos - the invisible components that shape our universe.
+            Our research combines theoretical models with observational data to constrain the properties of these elusive particles
+            that make up most of the matter in the cosmos.
+          </p>
+          <p class="w3-text-grey" style="font-size: 16px;">
+            Using the Lyman-alpha forest as a powerful probe of structure formation, we can place tight constraints on
+            warm dark matter, fuzzy dark matter, and neutrino masses.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI & Simulation -->
+    <div class="w3-card w3-white w3-padding-32 w3-margin-top">
+      <div class="w3-row">
+        <div class="w3-col m2 w3-center">
+          <i class="fa fa-microchip w3-text-indigo" style="font-size: 80px;"></i>
+        </div>
+        <div class="w3-col m10">
+          <h2>AI & Simulation</h2>
+          <p class="w3-text-grey" style="font-size: 16px;">
+            Epistemological redefinition of learning in the era of AI and simulation - pushing the boundaries of computational cosmology.
+            We develop and deploy cutting-edge machine learning techniques to extract maximum information from cosmological simulations.
+          </p>
+          <p class="w3-text-grey" style="font-size: 16px;">
+            Our emulator technologies build models to interpolate between expensive simulations with different cosmological parameters
+            using Bayesian statistics, enabling rapid exploration of parameter space that would otherwise be computationally prohibitive.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Public Engagement -->
+    <div class="w3-card w3-white w3-padding-32 w3-margin-top">
+      <div class="w3-row">
+        <div class="w3-col m2 w3-center">
+          <i class="fa fa-gamepad w3-text-indigo" style="font-size: 80px;"></i>
+        </div>
+        <div class="w3-col m10">
+          <h2>Public Engagement & Visualization</h2>
+          <p class="w3-text-grey" style="font-size: 16px;">
+            Deepening public ownership of cosmological discovery through game and interactive visualization.
+            We believe that the wonders of the universe should be accessible to everyone, not just professional scientists.
+          </p>
+          <p class="w3-text-grey" style="font-size: 16px;">
+            Through partnerships with experts in cinematic arts, visual culture, and game design, we create immersive experiences
+            that allow the public to explore and understand cosmological concepts in intuitive and engaging ways.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Instrumentation & Site -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content w3-center">
+    <h1><i class="fa fa-cogs w3-text-indigo"></i> Instrumentation & Site</h1>
+    <p class="w3-xlarge w3-padding-32 w3-text-grey">Coming soon</p>
+    <p>Details about our observational facilities and instrumentation will be available here.</p>
+  </div>
+</div>
+
+<!-- Education -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content w3-center">
+    <h1><i class="fa fa-graduation-cap w3-text-indigo"></i> Education</h1>
+    <p class="w3-xlarge w3-padding-32 w3-text-grey">Coming soon</p>
+    <p>Information about our educational programs and opportunities will be available here.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <p><a href="larc.html">LARC</a> - Lyman Alpha Research Collaboration</p>
+    <p class="w3-small w3-text-grey">USC Dornsife | UC Riverside | Carnegie Observatories</p>
+ </div>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

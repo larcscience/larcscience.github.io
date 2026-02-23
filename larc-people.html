@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>People - LARC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.person-card {min-height: 280px;}
+.person-card-small {min-height: 320px;}
+.expertise {font-size: 15px; color: #666; font-style: italic;}
+.profile-img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.profile-img-large {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.profile-img-small {
+  width: 100px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.placeholder-icon {
+  width: 200px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin: 0 auto 10px auto;
+}
+.placeholder-icon-large {
+  width: 150px;
+  height: 190px;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-indigo" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="larc.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="larc-science.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Science</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">People</a>
+    <a href="larc-publications.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Publications</a>
+    <a href="larc-gallery.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Gallery</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="larc.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="larc-science.html" class="w3-bar-item w3-button w3-padding-large">Science</a>
+    <a href="larc-publications.html" class="w3-bar-item w3-button w3-padding-large">Publications</a>
+    <a href="larc-gallery.html" class="w3-bar-item w3-button w3-padding-large">Gallery</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:128px 16px; background-image: url('larc-images/asterix-z1.avif'); background-size: cover;">
+  <h1 class="w3-margin w3-jumbo" style="color: white;">People</h1>
+  <p class="w3-xlarge" style="color: white;">LARC Team Members</p>
+</header>
+
+<!-- Leadership Section -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center"><i class="fa fa-star w3-text-indigo"></i> Leadership</h1>
+    <div class="w3-row-padding w3-center" style="margin-top: 32px;">
+      <div class="w3-half">
+        <div class="w3-card w3-white w3-padding-32 person-card">
+          <img src="larc-images/Vera-gluscevic-900x1260.jpg" alt="Vera Gluscevic" class="profile-img-large">
+          <h3>Vera Gluscevic</h3>
+          <p class="w3-text-grey"><strong>Project Lead</strong></p>
+          <p>Associate Professor of Physics and Astronomy</p>
+          <p class="w3-small">University of Southern California</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+      <div class="w3-half">
+        <div class="w3-card w3-white w3-padding-32 person-card">
+          <img src="larc-images/simeon-bird-900x1260.jpg" alt="Simeon Bird" class="profile-img-large">
+          <h3>Simeon Bird</h3>
+          <p class="w3-text-grey"><strong>Co-Project Lead</strong></p>
+          <p>Associate Professor of Physics and Astronomy</p>
+          <p class="w3-small">UC Riverside</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Faculty Section -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center"><i class="fa fa-graduation-cap w3-text-indigo"></i> Faculty</h1>
+    <div class="w3-row-padding" style="margin-top: 32px;">
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/sean-kyle-bouchard-900x1260.avif" alt="Sean Bouchard" class="profile-img">
+          <h4>Sean Bouchard</h4>
+          <p class="w3-small">Professor of Practice, School of Cinematic Arts</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cinematic arts</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/james-bullock.avif" alt="James Bullock" class="profile-img">
+          <h4>James Bullock</h4>
+          <p class="w3-small">Professor of Physics and Astronomy; Dean of USC Dornsife</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/martzi-campos-900x1260.jpg" alt="Martzi Campos" class="profile-img">
+          <h4>Martzi Campos</h4>
+          <p class="w3-small">Professor of Practice, School of Cinematic Arts</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cinematic arts</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>George Fuller</h4>
+          <p class="w3-small">Professor of Physics</p>
+          <p class="w3-small w3-text-grey">UC San Diego</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/dmitri-gallow-900x1260.jpg" alt="Dmitri Gallow" class="profile-img">
+          <h4>Dmitri Gallow</h4>
+          <p class="w3-small">Associate Professor of Philosophy</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Philosophy</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>John Hawthorne</h4>
+          <p class="w3-small">Professor of Philosophy</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Philosophy</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/christopher-hitchcock-900x1260.jpg" alt="Christopher Hitchcock" class="profile-img">
+          <h4>Christopher Hitchcock</h4>
+          <p class="w3-small">Professor of Philosophy</p>
+          <p class="w3-small w3-text-grey">Caltech</p>
+          <p class="expertise">Philosophy</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>David Hogg</h4>
+          <p class="w3-small">Professor of Physics and Data Science</p>
+          <p class="w3-small w3-text-grey">NYU</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/brian-jacobson-900x1260.jpg" alt="Brian Jacobson" class="profile-img">
+          <h4>Brian Jacobson</h4>
+          <p class="w3-small">Professor of Visual Culture</p>
+          <p class="w3-small w3-text-grey">Caltech</p>
+          <p class="expertise">Visual culture</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/aiichiro-nakano-900x1260.jpg" alt="Aiichiro Nakano" class="profile-img">
+          <h4>Aiichiro Nakano</h4>
+          <p class="w3-small">Professor of Computer Science, Physics, and Quantitative and Computational Biology</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Computer science and AI</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/drew-newman-900x1260.jpg" alt="Drew Newman" class="profile-img">
+          <h4>Drew Newman</h4>
+          <p class="w3-small">Staff Scientist</p>
+          <p class="w3-small w3-text-grey">Carnegie Observatories</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>Kris Pardo</h4>
+          <p class="w3-small">Assistant Professor of Physics and Astronomy</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/gwen-rudie-900x1260.jpg" alt="Gwen Rudie" class="profile-img">
+          <h4>Gwen Rudie</h4>
+          <p class="w3-small">Staff Scientist</p>
+          <p class="w3-small w3-text-grey">Carnegie Observatories</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/christian-shelton-900x1260.jpg" alt="Christian Shelton" class="profile-img">
+          <h4>Christian Shelton</h4>
+          <p class="w3-small">Professor of Computer Science</p>
+          <p class="w3-small w3-text-grey">UC Riverside</p>
+          <p class="expertise">Statistics and computer science</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Postdocs Section -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center"><i class="fa fa-flask w3-text-indigo"></i> Postdoctoral Researchers</h1>
+    <div class="w3-row-padding w3-center" style="margin-top: 32px;">
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white w3-padding-16 person-card-small">
+          <img src="larc-images/helena-garcia-escudero-900x1260.avif" alt="Helena Escudero" class="profile-img">
+          <h4>Helena Escudero</h4>
+          <p class="w3-small">Postdoctoral Researcher</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white w3-padding-16 person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>Priyank Parashari</h4>
+          <p class="w3-small">Postdoctoral Researcher</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Graduate Students Section -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center"><i class="fa fa-book w3-text-indigo"></i> Graduate Students</h1>
+    <div class="w3-row-padding" style="margin-top: 32px;">
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/shahed-shayan-arani-900x1260.jpg" alt="Shahed Shayan Arani" class="profile-img">
+          <h4>Shahed Shayan Arani</h4>
+          <p class="w3-small">PhD Student in Physics</p>
+          <p class="w3-small w3-text-grey">UC San Diego</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/dwaipayan-chanda-900x1260.jpg" alt="Dwaipayan Chanda" class="profile-img">
+          <h4>Dwaipayan Chanda</h4>
+          <p class="w3-small">PhD Student in Physics</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/wendy-crumrine-900x1260.jpg" alt="Wendy Crumrine" class="profile-img">
+          <h4>Wendy Crumrine</h4>
+          <p class="w3-small">PhD Student in Physics</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/meng-yuan-ho-900x1260.jpg" alt="Meng-Yuan Ho" class="profile-img">
+          <h4>Meng-Yuan Ho</h4>
+          <p class="w3-small">PhD Student</p>
+          <p class="w3-small w3-text-grey">UC Riverside</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/runa-indrei-900x1260.jpg" alt="Runa Indrei" class="profile-img">
+          <h4>Runa Indrei</h4>
+          <p class="w3-small">PhD Student in Physics</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/gaurav-pundir-900x1260.jpg" alt="Gaurav Pundir" class="profile-img">
+          <h4>Gaurav Pundir</h4>
+          <p class="w3-small">PhD Student in Astronomy</p>
+          <p class="w3-small w3-text-grey">UC Riverside</p>
+          <p class="expertise">Epoch of Reionization</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>Eleanor Stuart</h4>
+          <p class="w3-small">PhD Student in Physics</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <img src="larc-images/samuel-tang-900x1260.jpg" alt="Samuel Tang" class="profile-img">
+          <h4>Samuel Tang</h4>
+          <p class="w3-small">Master of Fine Arts</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Game design and development</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>Harini Venkatesan</h4>
+          <p class="w3-small">PhD Student in Computer Science</p>
+          <p class="w3-small w3-text-grey">UC Riverside</p>
+          <p class="expertise">Machine learning and inference</p>
+        </div>
+      </div>
+
+      <div class="w3-quarter w3-margin-bottom">
+        <div class="w3-card w3-white w3-padding-16 w3-center person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>James Wen</h4>
+          <p class="w3-small">PhD Student in Physics</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p class="expertise">Cosmology and astrophysics</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Staff Section -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <h1 class="w3-center"><i class="fa fa-briefcase w3-text-indigo"></i> Staff</h1>
+    <div class="w3-row-padding w3-center" style="margin-top: 32px;">
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white w3-padding-32 person-card-small">
+          <div class="placeholder-icon"><i class="fa fa-user w3-text-indigo" style="font-size: 60px;"></i></div>
+          <h4>Tracie Cacatian</h4>
+          <p class="w3-small">Administrative Program Manager</p>
+          <p class="w3-small w3-text-grey">USC</p>
+          <p><i class="fa fa-phone"></i> (213) 821-2927</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <p><a href="larc.html">LARC</a> - Lyman Alpha Research Collaboration</p>
+    <p class="w3-small w3-text-grey">USC Dornsife | UC Riverside | Carnegie Observatories</p>
+ </div>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
